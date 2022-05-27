@@ -4,9 +4,9 @@
 		"React": "readonly"
 	},
 	"rules": {
-		"no-unused-vars": [1, {"args": "after-used", "argsIgnorePattern": "^_"}],
+		"no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }],
 		"no-shadow": "off",
-		"max-len": [1, {"code": 100}],
+		"max-len": [1, { "code": 100 }],
 		"semi": "warn",
 		"array-bracket-spacing": ["warn", "always"],
 		"object-curly-spacing": ["warn", "always"],
