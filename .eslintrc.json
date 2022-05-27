@@ -1,8 +1,21 @@
 {
-	"extends": "next/core-web-vitals",
+	"extends": ["next", "next/core-web-vitals", "eslint:recommended"],
+	"globals": {
+		"React": "readonly"
+	},
+	"overrides": [
+		{
+			"files": ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
+			"rules": {
+				// example of overriding a rule
+				"storybook/hierarchy-separator": "error"
+			}
+		}
+	],
 	"rules": {
+        "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }]
 		"no-shadow": "off",
-		"max-len": ["warn", {"code": 100}],
+		"max-len": [1, {"code": 100}],
 		"semi": "warn"
 	}
 }
